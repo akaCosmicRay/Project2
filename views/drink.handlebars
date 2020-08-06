@@ -1,0 +1,69 @@
+<div class="container" id="drink-img">
+  <div class="row">
+    <style>
+      body {
+        background: #FC5C7D;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6A82FB, #FC5C7D);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: auto;
+        align-items: center;
+      }
+
+      .fareDisplay {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      h1 {
+        font-family: "cocktail";
+        font-size: 3rem;
+      }
+    </style>
+    <div class="col-md-5 fare">
+      <div class="card fareDisplay" style="width: auto;" id="fareCard">
+        <br>
+        
+        <h1>{{drink.drinkName}}</h1>
+        <img style="height: 350px" src="{{drink.drinkImage}}" alt="">
+        <p id="drink-fonti">Type: {{drink.alcohol}}</p>
+        <a href="/favorites/{{drink.idDrink}}" id=favoritesBtn>♥Add to Favorites♥</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 fare">
+      <div class="card fareDisplay" style="width: auto;" id="fareCard">
+
+        <h1 id="top-line">Ingredients</h1>
+        <ul>
+          {{#each drink.ingredients}}
+          <span id="ingredientPics">{{this.name}}: {{this.measurement}} <img src="https://www.thecocktaildb.com/images/ingredients/{{this.name}}-Small.png" alt=""></span>
+          
+          
+
+
+          {{/each}}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <br>
+  <div class="row">
+    <div class="col-md-12 fare" id="card-border">
+      <div class="card fareDisplay" style="align: center;" id="fareCard">
+
+        <p class="drink-font"><b>Instructions :</b></p>
+        <p>{{drink.instructions}}</p>
+        <p class="drink-font"><b>Glass:</b> {{drink.glass}}</p>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

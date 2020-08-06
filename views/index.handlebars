@@ -1,0 +1,58 @@
+<!-- 2. after user enters a drink to search, images populate on  index page (background still looks like the main page) like modal, holding search results-->
+<div id="home">
+  <style>
+    body {
+      background-image: url(../assets/img/cosmic.jpg);
+      background-repeat: no-repeat;
+      background-position: fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      width: auto;
+      align-items: center;
+    }
+
+    .fareDisplay {
+      width: 0;
+    }
+  </style>
+
+  <div class="container">
+    <h1 class="display-4" id="indexHeader">Why limit happy to an hour?</h1>
+    <br>
+    <br>
+    <h2 id="mixItUp">Let's mix it up</h2>
+
+    <form class="clearfix mb-4" method="GET" action="/">
+      <div class="form-group">
+        <input name="query" type="text" id="drinks-name" class="form-control" aria-describedby="drinks-name"
+          placeholder="Enter Drink Name or a Letter">
+      </div>
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 fare">
+        <div class="card fareDisplay" style="align: center;" id="index-img">
+          <div class="col-6 offset-3">
+            <div class="card bg-dark text-white" style="width: 30rem;">
+              <div class="card-header">Results: </div>
+              <div class="card-body">
+
+                <ul id="drinks-list" class="list-group">
+                  {{#each drinks}}
+                  <li data-id="{{this.idDrink}}" class="list-group-item">
+                    <a id="drink-Option" href="drink/{{this.idDrink}}">{{this.drinkName}}</a>
+                    <img class="thumbnail" src="{{this.drinkImage}}" alt="">
+                    
+                  </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

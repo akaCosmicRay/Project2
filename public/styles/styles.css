@@ -1,0 +1,214 @@
+
+@font-face {
+  font-family: cocktail;
+  src: url(../assets/img/Cocktail\ Script.ttf);
+}
+
+.navbar {
+  height: 100px;
+  margin-bottom: 2em;
+}
+
+#drinks-name {
+  border: 5px solid darkslategrey;
+}
+#fav-card {
+  align-items: center;
+  background-color: white;
+}
+
+.list-group-item {
+  line-height: 2.5;
+}
+.card {
+  border: none;
+}
+#submit:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+#submit:hover:before
+{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+#submit:hover
+{
+  animation: animate 8s linear infinite;
+}
+/*drink*/
+ul#drinks-list img.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+#drink-fonts {
+  font-size: 20px;
+}
+.drink-font {
+  font-size: 20 px;
+}
+#card-border {
+  border: 1px solid lightslategrey;
+  text-align: center;
+}
+#ingredientPics{
+  padding:5px;
+}
+#top-line {
+  margin-top: 20px;
+}
+/*???*/
+
+#submit{
+  transform: translate(-50%,-50%);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+  margin-left: 43px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/*drink*/
+ul#drinks-list img.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+#drink-fonts {
+  font-size: 20px;
+}
+.drink-font {
+  font-size: 20 px;
+}
+#card-border {
+  border: 1px solid lightslategrey;
+  text-align: center;
+}
+#drink-fonti {
+  text-align: center;
+}
+#fareCard {
+  background-color: rgba(245, 245, 245, 0.4);background: transparent;
+  text-align: center;
+}
+@keyframes animate
+{
+    0%
+    {
+      background-position: 0%;
+    }
+    100%
+    {
+      background-position: 400%;
+    }
+}
+
+
+
+/*##########################################*/
+.list-group-item{
+  background-color: rgb(0,0,0);
+  text-align: center;
+}
+
+#listItems,
+.list-group-item,
+.card-header,
+#drink-Option{
+  color: palevioletred !important;
+  font-weight: bolder;
+}
+#listItems{
+  color: palevioletred !important;
+}
+
+#drinks-name{
+  width: 50%;
+}
+
+.img-fluid{
+  max-width: 420%;
+}
+
+.btn{
+  border-color: white;
+}
+
+
+#indexHeader{
+  font-family: "cocktail";
+  font-size: 5.5rem;
+}
+
+#indexHeader-signIn{
+  font-family: "cocktail";
+  font-size: 5.5rem;
+  color:plum;
+}
+
+#mixItUp{
+  font-family: "cocktail";
+  font-size: 3rem;
+}
+
+#inputPassword,
+#inputEmail,
+#inputUsername,
+#plum{
+  max-width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+#signIn{
+  color: white;
+}
+
+#plum,
+#signIn:hover{
+  background-color: plum !important;
+}
+
+#favoritesBtn{
+  font-size: 2rem;
+  color:white;
+  font-family: "cocktail";
+
+}
+
+#fav-card{
+  background: rgb(0,0,0,0);
+  margin-top: 60px;
+}
+
+#fave-card{
+  background: #212529;
+}
+
+#plum{
+  margin-top: 0;
+  border-color: aquamarine;
+}
+
+#quote{
+  color: rgb(23, 41, 41);
+  font-family: "cocktail";
+
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--- 1 . Message Welcome with a search bar and image / submit button-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <!---javascript-->
+  <title>Cosmic Cocktails </title>
+</head>
+
+<body class="class-for-main">
+  {{!-- Nav Bar --}}
+  <nav class="navbar navbar-dark bg-dark">
+    <h3 class="my-0 mr-md-auto text-light font-weight-normal"><a class="navbar-brand" href="#" style="max-width: 14%;">
+    <img src="assets/img/CosmicCocktails.png" class="img-fluid">
+ </a></h3>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-light" href="/">Home</a>
+      <a class="p-2 text-light" href="/favorites">Favorites</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="/login" id="signIn">Sign In</a>
+  </nav>
+  <main>
+    {{{body}}}
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

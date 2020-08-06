@@ -1,0 +1,41 @@
+<div class="container">
+  <style>
+    body {
+      background-image: url(../assets/img/favoritesBackground.jpg);
+      background-repeat: no-repeat;
+      background-position: fixed;
+      background-size: cover;
+      background-attachment: fixed;
+      width: auto;
+      align-items: center;
+    }
+  </style>
+  <div class="row"  id="fav-img" >
+    <div class="col-md-12 fare">
+      <div class="card fareDisplay" id="fav-card">
+       
+          <div class="card bg-white text-dark" style="width: 30rem;">
+            
+            <div class="card-header" id="fave-card"> Your Favorite Cosmic Cocktails Recipe List:
+
+            </div>
+            <div class="card-body" id="fave-card">
+
+              <!-- shows up on main page, and includes favorites list - text not showing-->
+              <ul id="drinks-list" class="list-group">
+                {{#each drinks}}
+                <li data-id="{{this.idDrink}}" class="list-group-item">
+                  <a href="drink/{{this.idDrink}}" id="listItems">{{this.drinkName}}</a>
+                  <img class="thumbnail" src="{{this.drinkImage}}" alt="">
+                 
+                  {{!--<button class="btn btn-danger float-right delete" "text-white">remove from Favorites</button>--}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
